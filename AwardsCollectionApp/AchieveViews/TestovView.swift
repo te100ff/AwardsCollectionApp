@@ -26,6 +26,13 @@ struct TestovView: View {
                 
                 //path.addRect(CGRect(x: 0, y: nearLine, width: 10, height: 10))
             }
+            .fill(
+                LinearGradient(
+                    gradient: Gradient(colors: [.black, .white]),
+                    startPoint: .topLeading,
+                    endPoint: .bottomTrailing
+                )
+            )
             
             Path { path in
                 path.move(to: CGPoint(x: 0, y: farLine))
@@ -33,8 +40,23 @@ struct TestovView: View {
                 path.addLine(to: CGPoint(x: width, y: nearLine))
                 path.addLine(to: CGPoint(x: farLine, y: 0))
             }
+            
+            Path { path in
+                path.addArc(
+                    center: CGPoint(x: nearLine, y: nearLine),
+                    radius: nearLine,
+                    startAngle: .degrees(0),
+                    endAngle: .degrees(90),
+                    clockwise: true
+                )
+            }
+            
         }
         .frame(width: width, height: height)
+        
+        
+        
+        
     }
 }
 
