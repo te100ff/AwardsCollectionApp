@@ -15,6 +15,7 @@ struct TestovMain: View {
         ZStack {
             TestovLineOne(width: width, height: height)
             TestovLineTwo(width: width, height: height)
+            TestovCenter(width: width, height: height)
         }
     }
 }

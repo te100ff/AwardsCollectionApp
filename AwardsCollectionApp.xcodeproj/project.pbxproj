@@ -14,6 +14,9 @@
 		18731192267C919400430EEE /* TestovLineTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18731191267C919400430EEE /* TestovLineTwo.swift */; };
 		18731194267C91A800430EEE /* TestovCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18731193267C91A800430EEE /* TestovCenter.swift */; };
 		18731196267CAAAE00430EEE /* PlaygroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18731195267CAAAE00430EEE /* PlaygroundView.swift */; };
+		18F15FD8267CDF0300EC9976 /* Playground3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F15FD7267CDF0300EC9976 /* Playground3.swift */; };
+		18F15FDA267D288800EC9976 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F15FD9267D288800EC9976 /* test.swift */; };
+		18F15FDC267D3B0100EC9976 /* FireEyes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F15FDB267D3B0100EC9976 /* FireEyes.swift */; };
 		A89D0931267B76D400C1FB66 /* AwardsCollectionAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89D0930267B76D400C1FB66 /* AwardsCollectionAppApp.swift */; };
 		A89D0933267B76D400C1FB66 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89D0932267B76D400C1FB66 /* MainView.swift */; };
 		A89D0935267B76D600C1FB66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A89D0934267B76D600C1FB66 /* Assets.xcassets */; };
@@ -33,6 +36,9 @@
 		18731191267C919400430EEE /* TestovLineTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestovLineTwo.swift; sourceTree = "<group>"; };
 		18731193267C91A800430EEE /* TestovCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestovCenter.swift; sourceTree = "<group>"; };
 		18731195267CAAAE00430EEE /* PlaygroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundView.swift; sourceTree = "<group>"; };
+		18F15FD7267CDF0300EC9976 /* Playground3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playground3.swift; sourceTree = "<group>"; };
+		18F15FD9267D288800EC9976 /* test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
+		18F15FDB267D3B0100EC9976 /* FireEyes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireEyes.swift; sourceTree = "<group>"; };
 		A89D092D267B76D400C1FB66 /* AwardsCollectionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwardsCollectionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A89D0930267B76D400C1FB66 /* AwardsCollectionAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsCollectionAppApp.swift; sourceTree = "<group>"; };
 		A89D0932267B76D400C1FB66 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -76,7 +82,10 @@
 				1873118F267C918700430EEE /* TestovLineOne.swift */,
 				18731191267C919400430EEE /* TestovLineTwo.swift */,
 				18731195267CAAAE00430EEE /* PlaygroundView.swift */,
+				18F15FD9267D288800EC9976 /* test.swift */,
 				184A5ED7267CDC2A00AEF3AA /* Playground 2.swift */,
+				18F15FDB267D3B0100EC9976 /* FireEyes.swift */,
+				18F15FD7267CDF0300EC9976 /* Playground3.swift */,
 				18731193267C91A800430EEE /* TestovCenter.swift */,
 			);
 			path = TestovView;
@@ -191,10 +200,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8E1B481267B7967005E98AA /* CurvesView.swift in Sources */,
+				18F15FDC267D3B0100EC9976 /* FireEyes.swift in Sources */,
 				18731196267CAAAE00430EEE /* PlaygroundView.swift in Sources */,
 				A89D0942267B77C800C1FB66 /* AwardsView.swift in Sources */,
 				A89D0933267B76D400C1FB66 /* MainView.swift in Sources */,
 				18731192267C919400430EEE /* TestovLineTwo.swift in Sources */,
+				18F15FDA267D288800EC9976 /* test.swift in Sources */,
+				18F15FD8267CDF0300EC9976 /* Playground3.swift in Sources */,
 				1873118A267BEDF100430EEE /* TestovView.swift in Sources */,
 				184A5ED8267CDC2A00AEF3AA /* Playground 2.swift in Sources */,
 				A8E1B485267B7979005E98AA /* PathView.swift in Sources */,

@@ -23,9 +23,20 @@ struct MainView: View {
             }
             
             Spacer()
-            if showAward {
-                GradientRectangles(width: 250, height: 250)
-                    .transition(.transition)
+            ZStack {
+                if showAward {
+                    TestovLineOne(width: 300, height: 300)
+                        .transition(.move(edge: .leading))
+                    TestovLineTwo(width: 300, height: 300)
+                        .transition(.move(edge: .trailing))
+                    test(width: 300, height: 300)
+                        .transition(.scale)
+                    FireEyes(width: 300, height: 300)
+                        .transition(.transition)
+                        
+                }
+                
+                
             }
             Spacer()
         }
@@ -34,19 +45,23 @@ struct MainView: View {
         
     }
     
-    private func buttonAction() {
+    private func buttonAction()  {
         withAnimation {
             showAward.toggle()
         }
+        
     }
 }
 
 extension AnyTransition {
     static var transition: AnyTransition {
-        let insertion = AnyTransition.move(edge: .leading)
-            .combined(with: .scale)
+        let insertion = AnyTransition.scale(scale: 5)
+//            .combined(with: .scale(scale: 4))
+            
+            .animation(.default.delay(0.5))
         
-        let removal = AnyTransition.scale
+        
+        let removal = AnyTransition.scale(scale: 4)
             .combined(with: .opacity)
         
         return .asymmetric(insertion: insertion, removal: removal)

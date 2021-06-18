@@ -24,7 +24,7 @@ struct TestovLineOne: View {
                 path.addLine(to: CGPoint(x: width, y: farLine))
                 path.addLine(to: CGPoint(x: farLine, y: height))
                 
-                //path.addRect(CGRect(x: 0, y: nearLine, width: 10, height: 10))
+            
             }
             .fill(
                 RadialGradient(
@@ -73,6 +73,7 @@ struct TestovLineOne: View {
             
         }
         .frame(width: width, height: height)
+        .shadow(color: .red, radius: 10, x: 0, y: 0)
     }
 }
 
