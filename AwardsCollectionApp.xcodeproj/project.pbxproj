@@ -12,6 +12,7 @@
 		18731190267C918700430EEE /* TestovLineOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873118F267C918700430EEE /* TestovLineOne.swift */; };
 		18731192267C919400430EEE /* TestovLineTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18731191267C919400430EEE /* TestovLineTwo.swift */; };
 		18731194267C91A800430EEE /* TestovCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18731193267C91A800430EEE /* TestovCenter.swift */; };
+		18731196267CAAAE00430EEE /* PlaygroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18731195267CAAAE00430EEE /* PlaygroundView.swift */; };
 		A89D0931267B76D400C1FB66 /* AwardsCollectionAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89D0930267B76D400C1FB66 /* AwardsCollectionAppApp.swift */; };
 		A89D0933267B76D400C1FB66 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A89D0932267B76D400C1FB66 /* MainView.swift */; };
 		A89D0935267B76D600C1FB66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A89D0934267B76D600C1FB66 /* Assets.xcassets */; };
@@ -29,6 +30,7 @@
 		1873118F267C918700430EEE /* TestovLineOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestovLineOne.swift; sourceTree = "<group>"; };
 		18731191267C919400430EEE /* TestovLineTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestovLineTwo.swift; sourceTree = "<group>"; };
 		18731193267C91A800430EEE /* TestovCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestovCenter.swift; sourceTree = "<group>"; };
+		18731195267CAAAE00430EEE /* PlaygroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaygroundView.swift; sourceTree = "<group>"; };
 		A89D092D267B76D400C1FB66 /* AwardsCollectionApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AwardsCollectionApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A89D0930267B76D400C1FB66 /* AwardsCollectionAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AwardsCollectionAppApp.swift; sourceTree = "<group>"; };
 		A89D0932267B76D400C1FB66 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				1873118D267C916A00430EEE /* TestovMain.swift */,
 				1873118F267C918700430EEE /* TestovLineOne.swift */,
 				18731191267C919400430EEE /* TestovLineTwo.swift */,
+				18731195267CAAAE00430EEE /* PlaygroundView.swift */,
 				18731193267C91A800430EEE /* TestovCenter.swift */,
 			);
 			path = TestovView;
@@ -185,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8E1B481267B7967005E98AA /* CurvesView.swift in Sources */,
+				18731196267CAAAE00430EEE /* PlaygroundView.swift in Sources */,
 				A89D0942267B77C800C1FB66 /* AwardsView.swift in Sources */,
 				A89D0933267B76D400C1FB66 /* MainView.swift in Sources */,
 				18731192267C919400430EEE /* TestovLineTwo.swift in Sources */,

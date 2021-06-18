@@ -34,6 +34,43 @@ struct TestovLineOne: View {
                     endRadius: geometry.size.width * 0.4
                 )
             )
+            
+            Path { path in
+                path.addArc(
+                    center: CGPoint(x: nearLine, y: nearLine),
+                    radius: nearLine,
+                    startAngle: .degrees(0),
+                    endAngle: .degrees(90),
+                    clockwise: true
+                )
+            }
+            .fill(
+                RadialGradient(
+                    gradient: Gradient(colors: [.white, .black]),
+                    center: .topLeading,
+                    startRadius: geometry.size.width * 0.01,
+                    endRadius: geometry.size.width * 0.2
+                )
+            )
+            
+            Path { path in
+                path.addArc(
+                    center: CGPoint(x: farLine, y: farLine),
+                    radius: nearLine,
+                    startAngle: .degrees(-90),
+                    endAngle: .degrees(180),
+                    clockwise: false
+                )
+            }
+            .fill(
+                RadialGradient(
+                    gradient: Gradient(colors: [.white, .black]),
+                    center: .bottomTrailing,
+                    startRadius: geometry.size.width * 0.01,
+                    endRadius: geometry.size.width * 0.2
+                )
+            )
+            
         }
         .frame(width: width, height: height)
     }
