@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		184A5ED8267CDC2A00AEF3AA /* Playground 2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184A5ED7267CDC2A00AEF3AA /* Playground 2.swift */; };
 		1873118A267BEDF100430EEE /* TestovView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18731189267BEDF100430EEE /* TestovView.swift */; };
 		1873118E267C916A00430EEE /* TestovMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873118D267C916A00430EEE /* TestovMain.swift */; };
 		18731190267C918700430EEE /* TestovLineOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1873118F267C918700430EEE /* TestovLineOne.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		184A5ED7267CDC2A00AEF3AA /* Playground 2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Playground 2.swift"; sourceTree = "<group>"; };
 		18731189267BEDF100430EEE /* TestovView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestovView.swift; sourceTree = "<group>"; };
 		1873118D267C916A00430EEE /* TestovMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestovMain.swift; sourceTree = "<group>"; };
 		1873118F267C918700430EEE /* TestovLineOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestovLineOne.swift; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 				1873118F267C918700430EEE /* TestovLineOne.swift */,
 				18731191267C919400430EEE /* TestovLineTwo.swift */,
 				18731195267CAAAE00430EEE /* PlaygroundView.swift */,
+				184A5ED7267CDC2A00AEF3AA /* Playground 2.swift */,
 				18731193267C91A800430EEE /* TestovCenter.swift */,
 			);
 			path = TestovView;
@@ -193,6 +196,7 @@
 				A89D0933267B76D400C1FB66 /* MainView.swift in Sources */,
 				18731192267C919400430EEE /* TestovLineTwo.swift in Sources */,
 				1873118A267BEDF100430EEE /* TestovView.swift in Sources */,
+				184A5ED8267CDC2A00AEF3AA /* Playground 2.swift in Sources */,
 				A8E1B485267B7979005E98AA /* PathView.swift in Sources */,
 				A89D0931267B76D400C1FB66 /* AwardsCollectionAppApp.swift in Sources */,
 				A89D0940267B777E00C1FB66 /* StarterView.swift in Sources */,
