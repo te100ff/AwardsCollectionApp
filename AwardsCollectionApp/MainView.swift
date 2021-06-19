@@ -10,6 +10,9 @@ import SwiftUI
 struct MainView: View {
     @State private var showAward = false
     
+    let width: CGFloat
+    let height: CGFloat
+    
     var body: some View {
         VStack {
             Button(action: buttonAction) {
@@ -23,20 +26,25 @@ struct MainView: View {
             }
             
             Spacer()
-            ZStack {
-                if showAward {
-                    TestovLineOne(width: 300, height: 300)
-                        .transition(.move(edge: .leading))
-                    TestovLineTwo(width: 300, height: 300)
-                        .transition(.move(edge: .trailing))
-                    test(width: 300, height: 300)
-                        .transition(.scale)
-                    FireEyes(width: 300, height: 300)
-                        .transition(.transition)
-                        
+            
+            VStack {
+                ZStack {
+                    if showAward {
+                        BoneOne(width: width, height: height)
+                            .transition(.move(edge: .leading))
+                        BoneTwo(width: width, height: height)
+                            .transition(.move(edge: .trailing))
+                        Skull(width: width, height: height)
+                            .transition(.skullTransition)
+                        FireEyes(width: width, height: height)
+                            .transition(.fireEyesTransition)
+                    }
                 }
-                
-                
+                if showAward {
+                    Text("GAME OVER")
+                        .transition(.move(edge: .bottom))
+                    
+                }
             }
             Spacer()
         }
@@ -54,14 +62,27 @@ struct MainView: View {
 }
 
 extension AnyTransition {
-    static var transition: AnyTransition {
-        let insertion = AnyTransition.scale(scale: 5)
-//            .combined(with: .scale(scale: 4))
-            
+    static var skullTransition: AnyTransition {
+        let insertion = AnyTransition.scale(scale: 3)
+            .combined(with: .opacity)
             .animation(.default.delay(0.5))
         
         
-        let removal = AnyTransition.scale(scale: 4)
+        let removal = AnyTransition.scale(scale: 7)
+            .combined(with: .opacity)
+            .animation(.default.speed(0.15))
+            .animation(.default.delay(0.5))
+        
+        return .asymmetric(insertion: insertion, removal: removal)
+    }
+    
+    static var fireEyesTransition: AnyTransition {
+        let insertion = AnyTransition.offset()
+            .combined(with: .opacity)
+            .animation(.default.delay(1))
+        
+        
+        let removal = AnyTransition.offset()
             .combined(with: .opacity)
         
         return .asymmetric(insertion: insertion, removal: removal)
@@ -70,6 +91,6 @@ extension AnyTransition {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView()
+        MainView(width: 250, height: 250)
     }
 }

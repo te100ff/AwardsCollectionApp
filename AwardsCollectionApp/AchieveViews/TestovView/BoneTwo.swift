@@ -7,18 +7,18 @@
 
 import SwiftUI
 
-struct TestovLineTwo: View {
+struct BoneTwo: View {
     let width: CGFloat
     let height: CGFloat
     
     var body: some View {
-        TestovLineOne(width: 300, height: 300)
+        BoneOne(width: width, height: height)
             .rotationEffect(.degrees(90))
     }
 }
 
 struct TestovLineTwo_Previews: PreviewProvider {
     static var previews: some View {
-        TestovLineTwo(width: 300, height: 300)
+        BoneTwo(width: 300, height: 300)
     }
 }

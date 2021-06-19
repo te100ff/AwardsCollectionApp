@@ -1,5 +1,5 @@
 //
-//  PlaygroundView.swift
+//  test.swift
 //  AwardsCollectionApp
 //
 //  Created by Stanislav Testov on 18.06.2021.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct PlaygroundView: View {
+struct Skull: View {
     let width: CGFloat
     let height: CGFloat
     
@@ -16,7 +16,6 @@ struct PlaygroundView: View {
             let size = min(geometry.size.width, geometry.size.height)
             let middle = size / 2
             let nearLine = size * 0.1
-            let farLine = size * 0.9
             
             Path { path in
                 path.addArc(
@@ -26,74 +25,65 @@ struct PlaygroundView: View {
                     endAngle: .degrees(135),
                     clockwise: true
                 )
-            }
-        
-            
-            Path { path in
+                
                 path.addRect(
                     CGRect(
                         x: middle - size/40,
-                        y: middle,
+                        y: middle * 1.153,
                         width: size/20,
                         height: middle/2
                     )
                 )
-            }
-            
-            Path { path in
+                
                 path.addRect(
                     CGRect(
                         x: middle - size/10,
-                        y: middle,
+                        y: middle * 1.153,
                         width: size/20,
                         height: middle/2.5
                     )
                 )
-            }
-            
-            Path { path in
+                
                 path.addRect(
                     CGRect(
                         x: middle + size/20,
-                        y: middle,
+                        y: middle * 1.153,
                         width: size/20,
                         height: middle/2.5
                     )
                 )
-            }
-            
-            Path { path in
+                
                 path.addRect(
                     CGRect(
                         x: middle + size/7.5,
-                        y: middle,
+                        y: middle * 1.153,
                         width: size/20,
                         height: middle/4
                     )
                 )
-            }
-            
-            Path { path in
+                
                 path.addRect(
                     CGRect(
                         x: middle - size/5.5,
-                        y: middle,
+                        y: middle * 1.153,
                         width: size/20,
                         height: middle/4
                     )
                 )
             }
             
-
+            
+            
         }
         .frame(width: width, height: height)
+        .foregroundColor(.black)
+        .shadow(color: .red, radius: 10, x: 0, y: 0)
     }
     
 }
 
-
-struct PlaygroundView_Previews: PreviewProvider {
+struct test_Previews: PreviewProvider {
     static var previews: some View {
-        PlaygroundView(width: 300, height: 300)
+        Skull(width: 300, height: 300)
     }
 }

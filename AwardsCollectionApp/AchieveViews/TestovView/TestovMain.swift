@@ -13,9 +13,10 @@ struct TestovMain: View {
     
     var body: some View {
         ZStack {
-            TestovLineOne(width: width, height: height)
-            TestovLineTwo(width: width, height: height)
-            TestovCenter(width: width, height: height)
+            BoneOne(width: width, height: height)
+            BoneTwo(width: width, height: height)
+            Skull(width: width, height: height)
+            FireEyes(width: width, height: height)
         }
     }
 }

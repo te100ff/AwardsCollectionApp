@@ -7,14 +7,13 @@
 
 import SwiftUI
 
-struct TestovLineOne: View {
+struct BoneOne: View {
     let width: CGFloat
     let height: CGFloat
     
     var body: some View {
         GeometryReader { geometry in
             let size = min(geometry.size.width, geometry.size.height)
-            let middle = size / 2
             let nearLine = size * 0.1
             let farLine = size * 0.9
             
@@ -24,7 +23,6 @@ struct TestovLineOne: View {
                 path.addLine(to: CGPoint(x: width, y: farLine))
                 path.addLine(to: CGPoint(x: farLine, y: height))
                 
-            
             }
             .fill(
                 RadialGradient(
@@ -72,6 +70,7 @@ struct TestovLineOne: View {
             )
             
         }
+        .scaleEffect(0.8)
         .frame(width: width, height: height)
         .shadow(color: .red, radius: 10, x: 0, y: 0)
     }
@@ -79,6 +78,6 @@ struct TestovLineOne: View {
 
 struct TestovLineOne_Previews: PreviewProvider {
     static var previews: some View {
-        TestovLineOne(width: 300, height: 300)
+        BoneOne(width: 300, height: 300)
     }
 }
